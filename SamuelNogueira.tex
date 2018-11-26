@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{tabularx}
+\usepackage{lmodern,textcomp}
+\usepackage[hidelinks]{hyperref}
+\usepackage[sfdefault]{roboto}
+\usepackage{academicons}
+\usepackage{setspace}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{0E4D92}
+\definecolor{SlateGrey}{HTML}{4682B4}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\setstretch{1.05}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{João Nogueira}
+\tagline{}
+\photo{2.5cm}{foto_square.png}
+\personalinfo{%
+	\begin{spacing}{1.5}
+		\birthday{30/03/1987}
+		\location{\href{https://www.google.com/maps/@?api=1\&map\_action=map\&center=40.6408378\%2C-8.641316\&zoom=10}{Aveiro, Portugal}}
+		\email{\href{mailto:joaopbnogueira@gmail.com}{joaopbnogueira@gmail.com}}  
+		\phone{\href{tel:+351962924365}{+351 962924365}}
+		\skype{\href{skype:joao.p.nogueira}{joao.p.nogueira}}
+		\linkedin{\href{https://www.linkedin.com/in/joaopbnogueira/}{linkedin.com/in/joaopbnogueira}}
+		\orcid{\href{https://orcid.org/0000-0002-5748-833X}{orcid.org/0000-0002-5748-833X}}
+	\end{spacing}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[p1sidebar]{Key Expertise}
+
+Fast learner, flexible and proactive team-member with the following experience and characteristics:
+
+\smallskip
+
+\begin{tabularx}{\linewidth}{X X}
+	• Large-scale systems         & • International teams \& projects     \\
+	• Multiple program. languages & • Agile Scrum teams          \\
+	• Clean code, tests, CI/CD    & • Autonomous and self-driven
+\end{tabularx}
+
+\cvsection{Industry Experience}
+
+\cvevent{Senior Full Stack Developer}{\href{https://www.bosch.com/}{Bosch Thermotechnology}}{}{Aug 2017 -- Present}{Aveiro, Portugal}
+\begin{itemize}
+	\item \textbf{Deployment and operation of Azure cloud services} in a \textbf{Continuous Integration / Continuous Deployment} fashion
+	\item Cross-functional development, in \textbf{backend and frontend code},  working in \textbf{Agile Scrum} within an \textbf{international team} on everything that might be needed to push the project forward
+	\item Mentoring and supporting team members
+\end{itemize}
+
+\cvtag{React} \cvtag{Typescript} \cvtag{Bootstrap}
+\cvtag{C\#} \cvtag{.Net (Core)} \cvtag{MVC} 
+\cvtag{WebApi} \cvtag{REST} \cvtag{OAuth/OpenId} \cvtag{Swagger}
+\cvtag{SQL} \cvtag{Azure} \cvtag{Dep. Injection}  \cvtag{VSTest} \cvtag{Serilog} \cvtag{Seq}
+\cvtag{Entity Framework}  \cvtag{JIRA} \cvtag{VSTS} \cvtag{Scrum} \cvtag{TeamCity} \cvtag{SonarQube} \cvtag{Git}
+
+\divider
+
+\cvevent{Software Developer (Research \& Development)}{\href{http://www.alticelabs.com/}{Altice Labs}}{Formerly Portugal Telecom Inovação}{Jun 2012 -- Aug 2017}{Aveiro, Portugal}
+
+\begin{itemize}
+	\item Major contributions to \href{https://www.meo.pt/tv}{MEO IPTV} \textbf{large scale production services}, defining their \textbf{architecture and key algorithms} to ensure \textbf{performance and scalability} goals -- e.g. developer \& architect of MEO Catchup-TV App, MEO Search and MEO VOD Store, with several million users every month
+	\item Development and curation of reusable libraries / components in order to speedup new applications development, reduce production bugs, and \textbf{promote clean code and good programming practices}
+	\item \textbf{Planning, management, and coordination responsibilities in large national \& international projects} -- e.g. \href{http://www.alticelabs.com/gapott/}{Celtic-Plus NOTTS} (8.5 Million € budget on 6 different countries) and \href{http://www.alticelabs.com/site/ultratv/}{Ultra TV}
+\end{itemize}
+
+\cvtag{C\#} \cvtag{.Net} \cvtag{REST} \cvtag{OData} \cvtag{IIS} \cvtag{SQL} \cvtag{Mediaroom} \cvtag{IPTV} \cvtag{OTT} \cvtag{MPEG-DASH} \cvtag{Smooth Streaming} \cvtag{C++} \cvtag{C} \cvtag{R} \cvtag{Python} \cvtag{Machine Learning} \cvtag{Big Data} \cvtag{RStudio} \cvtag{CDNs} \cvtag{Apache Traffic Server} \cvtag{Nginx} \cvtag{Varnish} \cvtag{HAProxy} \cvtag{Svn} 
+\cvtag{Windows Server} \cvtag{CentOS} \cvtag{Ubuntu}  \cvtag{VMWare ESXi}
+
+\clearpage
+
+\cvsection[p2sidebar]{Industry Experience (Cont.)}
+
+\cvevent{Software Developer (Trainee Internship)}{\href{http://www.alticelabs.com/}{Altice Labs}}{Formerly Portugal Telecom Inovação}{Aug 2010 -- Sep 2011}{Aveiro, Portugal}
+
+\begin{itemize}
+	\item Successfully designed \& developed a Network / Cloud DVR proof-of-concept, \textbf{working autonomously} and proposing novel solutions to its significant technical challenges on client and server implementations -- supporting mobile devices (Android \& iOS)
+	\item Key insights and technical solutions were later embedded into MEO's Catch-up TV product
+\end{itemize}
+
+\smallskip
+\cvtag{C\#} \cvtag{.Net} \cvtag{WebForms} \cvtag{SmoothStreaming} \cvtag{Mediaroom} \cvtag{IIS}
+
+\divider
+
+\cvevent{Software Developer (Curricular Internship)}{\href{http://www.alticelabs.com/}{Altice Labs}}{Formerly Portugal Telecom Inovação}{Sep 2009 -- Aug 2010}{Aveiro, Portugal}
+
+\begin{itemize}
+	\item Fully responsible for the development of a Virtual Network Management, Mapping \& Discovery Software in the scope of the European project \href{http://www.4ward-project.eu/}{4WARD (FP7)}
+	\item Proved the viability of automated network virtualization and supported subsequent research projects such as \href{http://www.sail-project.eu/}{SAIL (FP7)}
+\end{itemize}
+
+\smallskip
+\cvtag{Java} \cvtag{SWT} \cvtag{C} \cvtag{Debian} \cvtag{XEN} \cvtag{libvirt} \cvtag{\LaTeX}
+
+\medskip
+
+\cvsection{Key Publications}
+
+\cvpub{\href{https://doi.org/10.1007/s11042-017-5043-9}{Catch-up TV forecasting: enabling next-generation over-the-top multimedia TV services}}{J. Nogueira, L. Guardalben, B. Cardoso, and S. Sargento}{Multimedia Tools and Applications, Springer, 2018}
+
+\divider
+
+\cvpub{\href{http://www.alticelabs.com/content/WP-Altice-OTT-IP-Video.pdf}{Altice OTT Video Strategy}}{J. Nogueira and  B. Cardoso}{White Paper, Altice Labs, 2017}
+
+\divider
+
+\cvpub{\href{https://doi.org/10.1109/iscc.2016.7543869}{Over-The-Top Catch-up TV content-aware caching}}{J. Nogueira, D. Gonzalez, L. Guardalben, and S. Sargento}{Symposium on Computers and Communication (ISCC), IEEE, 2016}
+
+\divider
+
+\cvpub{\href{https://dx.doi.org/10.1007/s00530-016-0516-7}{Catch-up TV analytics: characterization and consumption patterns identification on a production service}}{J. Nogueira, L. Guardalben, B. Cardoso, and S. Sargento}{Multimedia Systems, Springer, 2016}
+
+\divider
+
+\cvpub{\href{https://dx.doi.org/10.1007/s11277-015-2992-z}{Channel Selection Relying on Probabilistic Adjacent Channel Interference Analysis and Pattern Recognition}}{J. Nogueira and S. Sargento}{Wireless Personal Communications, Springer, 2016}
+
+\divider
+
+Thanks for reading my CV!
+
+\end{document}
