@@ -152,6 +152,29 @@
   \medskip
 }
 
+\newcommand{\cvproject}[3]{%
+	{\large\color{emphasis}#1\par}
+	\smallskip
+	\textbf{\color{accent}#2}\hfill(#3)\par
+	\medskip
+}
+
+\newcommand{\cvvoluntary}[4]{%
+	{\large\color{emphasis}#1\par}
+	\smallskip
+	\textbf{\color{accent}#2}\par
+	\smallskip
+	{\small\makebox[0.3\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
+		\ifstrequal{#4}{}{}{\makebox[0.7\linewidth][l]{\hfill\locationsymbol\hspace{0.3em}#4}}\par}
+	\medskip
+}
+
+\newcommand{\cvseminar}[3]{%
+	{\large\color{emphasis}#1\par}
+	\smallskip
+	\textbf{\color{accent}#2}\hfill\faCalendar \hspace{0.5em}#3\par
+	\smallskip
+}
 
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
